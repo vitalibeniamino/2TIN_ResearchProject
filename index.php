@@ -1,4 +1,5 @@
 <?php
+// Use 'composer install' to get dependencies
 // Remember to run tests using PHPUnit: 'vendor/bin/phpunit tests'
 
 // composer autoload. Might require 'composer dump-autoload' to work.
