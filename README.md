@@ -12,7 +12,7 @@ Enable mysqli in the php.ini config file by adding this line:
 ```
 extension=mysqli
 ```
-## Running the project
+## Testing & running the project
 Install dependencies (--no-dev when in production)
 ```
 composer install
@@ -26,3 +26,5 @@ Run unit tests
 ```
 ./vendor/bin/phpunit tests
 ```
+
+Place content in /var/www or whatever webserver you are using!
