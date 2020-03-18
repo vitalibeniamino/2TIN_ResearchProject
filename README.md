@@ -40,4 +40,8 @@ Run unit tests
 ./vendor/bin/phpunit tests
 ```
 
-Place content in /var/www or whatever webserver you are using!
+Place content in /var/www or whatever webserver you are using! A working application should give the following result:
+
+![app](https://i.imgur.com/IY9gerV.png "app")
+
+Check your apache/nginx logs if you get errors or missing data list!
