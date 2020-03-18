@@ -1,9 +1,13 @@
 # 2TIN Research Project
 ## Requirements & configuration
+Install Apache/Nginx
+
 Install PHP >7.3
 ```
 https://www.php.net/downloads
 ```
+Install mysql-server
+
 Install Composer
 ```
 https://getcomposer.org/download/
@@ -19,7 +23,6 @@ Open index.php and change following variables:
 $serverName = "localhost";
 $username = "mysql";
 $password = "ventieldopje24";
-$dbName = "employees";
 ```
 
 ## Testing & running the project
