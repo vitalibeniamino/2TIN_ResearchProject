@@ -18,6 +18,32 @@
                 </div>
             </div>
         </nav>
+        
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <?php
+        // scan the images directory for images to use in the carousel
+        // first 2 keys in the returned array are . and ..   We will need to filter those!
+        $images = scandir('assets/images');
+        foreach($images as $key => $image){
+            if (!in_array($image,array(".",".."))){
+                // First item needs to get the active css class. Otherwise the carousel will not show
+                echo ($key == 2) ? '<div class="carousel-item active">' : '<div class="carousel-item">';
+                echo "<img class='d-block w-100' src='assets/images/$image'/></div>";
+            }     
+        }
+    ?>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
         <?php
         // Use 'composer install' to get dependencies
         // Remember to run tests using PHPUnit: 'vendor/bin/phpunit tests'
@@ -41,7 +67,8 @@
         echo "</ul>";
 
         ?>
-    
-        <script src="assets/js/bootstrap.min.js" ></sccript>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js" ></script>
     </body>
 </html>
