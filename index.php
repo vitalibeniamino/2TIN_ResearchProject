@@ -6,13 +6,23 @@
      <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-    <h1>PXL - DevOps Demo application</h1><hr/>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">PXL DevOps App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.php">Home</a>
+                    <a class="nav-item nav-link" href="add.php">Add employee</a>
+                </div>
+            </div>
+        </nav>
         <?php
         // Use 'composer install' to get dependencies
         // Remember to run tests using PHPUnit: 'vendor/bin/phpunit tests'
 
         // composer autoload. Might require 'composer dump-autoload' to work.
-        require('vendor/autoload.php');
         require_once('config.php');
         // Build sql query and get results
         $sql = "SELECT emp_no, first_name, last_name FROM employees";

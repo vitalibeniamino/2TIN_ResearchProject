@@ -1,4 +1,5 @@
 <?php
+    require('vendor/autoload.php');
     // Define mysql server settings
     $serverName = "localhost";
     $username = "root";
