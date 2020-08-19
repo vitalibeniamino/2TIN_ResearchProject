@@ -12,7 +12,7 @@ Install Composer
 ```
 https://getcomposer.org/download/
 ```
-Enable mysqli in the php.ini config file by adding this line:
+Enable mysqli in the php.ini config file by adding this line (you might have to install the extension first):
 ```
 extension=mysqli
 ```
@@ -42,6 +42,6 @@ Run unit tests
 
 Place content in /var/www or whatever webserver you are using! A working application should give the following result:
 
-![app](https://i.imgur.com/IY9gerV.png "app")
+![app](https://i.imgur.com/BwYpmbs.png "app")
 
 Check your apache/nginx logs if you get errors or missing data list!
