@@ -15,6 +15,7 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="index.php">Home</a>
                     <a class="nav-item nav-link" href="add.php">Add employee</a>
+                    <a class="nav-item nav-link"> <?php echo gethostname(); ?></a>
                 </div>
             </div>
         </nav>
